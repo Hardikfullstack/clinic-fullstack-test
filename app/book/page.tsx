@@ -373,7 +373,8 @@ function BookingPageContent() {
 // Wrap with Suspense for static generation compatibility
 export default function BookingPage() {
   return (
-    <Suspense fallback={<BookingPageLoading />}>n      <BookingPageContent />
+    <Suspense fallback={<BookingPageLoading />}>
+      <BookingPageContent />
     </Suspense>
   );
 }
